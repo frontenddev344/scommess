@@ -454,17 +454,17 @@ section.cuisine__main h2 {
 }
 
 /*cuisine-css-end*/
-/*Aboutpage-css-start*/
-section.aboutbanner {
+/*placetostay-css-start*/
+section.placesbanner {
   height: 450px;
-  background-image: url(../images/aboutbanner.jpg);
+  background-image: url(../images/placesbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   object-fit: cover;
   position: relative;
 }
-section.aboutbanner::after {
+section.placesbanner::after {
   position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.64);
@@ -473,7 +473,7 @@ section.aboutbanner::after {
   inset: 0;
   z-index: 0;
 }
-section.aboutbanner .homebanner-text {
+section.placesbanner .homebanner-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -483,35 +483,112 @@ section.aboutbanner .homebanner-text {
   max-width: 50%;
 }
 
-.col-lg-6.col-md-6.col-sm-12.aboutspace {
-  display: -webkit-flex;
-}
-
-section.about__main {
+.budget_main {
   padding: 50px 0;
 }
 
-.about__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-.about__content h3 {
-  font-size: 20px;
-  color: #ffc83b;
-}
-.about__content p {
-  color: #0C0B0B;
-  font-weight: 400;
+.budget_main .outer {
+  margin: 20px 0;
 }
 
-.about__picture img {
-  height: 450px;
+.budget_main .outer .budget_box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.budget_main .outer .budget_box img {
+  height: 301px;
+  width: 100%;
   object-fit: cover;
 }
 
-/*Aboutpage-css-end*/
+.budget_main .outer .budget_box .contents {
+  text-align: center;
+  padding: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+}
+.budget_main .outer .budget_box .contents h3 {
+  color: #ffc83b;
+  font-size: 20px;
+}
+
+.budget_main .outer .budget_box .contents p {
+  position: relative;
+  z-index: 2;
+  color: #0C0B0B;
+}
+
+.budget_main .outer .budget_box .contents .btnss {
+  margin-top: 15px;
+}
+
+.budget_main .outer .budget_box .contents:hover .btnss a {
+  background: #fff;
+  color: #031a29;
+}
+
+/*placetostay-css-end*/
+/*gambling-css-start*/
+section.gamblingbanner {
+  height: 450px;
+  background-image: url(../images/gamblingbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+}
+section.gamblingbanner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.64);
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: 0;
+}
+section.gamblingbanner .homebanner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.page-btn a {
+  display: inline-block;
+  margin: 10px 0;
+  background: #ffc83b;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ffc83b;
+  transition: all 0.3s ease-in-out;
+}
+.page-btn a:hover {
+  color: #ffc83b;
+  background-color: transparent;
+  border: 1px solid #ffc83b;
+}
+
+.cuisine__part.gambling {
+  padding-left: 40px;
+}
+.cuisine__part.gambling h4 {
+  text-align: left;
+}
+
+/*gambling-css-end*/
 /*shows-css-start*/
 section.showsbanner {
   height: 450px;
@@ -608,17 +685,17 @@ img.rightarrow {
 }
 
 /*shows-css-end*/
-/*gambling-css-start*/
-section.gamblingbanner {
+/*Aboutpage-css-start*/
+section.aboutbanner {
   height: 450px;
-  background-image: url(../images/gamblingbanner.jpg);
+  background-image: url(../images/aboutbanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   object-fit: cover;
   position: relative;
 }
-section.gamblingbanner::after {
+section.aboutbanner::after {
   position: absolute;
   content: "";
   background-color: rgba(0, 0, 0, 0.64);
@@ -627,7 +704,7 @@ section.gamblingbanner::after {
   inset: 0;
   z-index: 0;
 }
-section.gamblingbanner .homebanner-text {
+section.aboutbanner .homebanner-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -637,31 +714,35 @@ section.gamblingbanner .homebanner-text {
   max-width: 50%;
 }
 
-.page-btn a {
-  display: inline-block;
-  margin: 10px 0;
-  background: #ffc83b;
-  color: #fff;
-  padding: 10px 40px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #ffc83b;
-  transition: all 0.3s ease-in-out;
+.col-lg-6.col-md-6.col-sm-12.aboutspace {
+  display: -webkit-flex;
 }
-.page-btn a:hover {
+
+section.about__main {
+  padding: 50px 0;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about__content h3 {
+  font-size: 20px;
   color: #ffc83b;
-  background-color: transparent;
-  border: 1px solid #ffc83b;
+}
+.about__content p {
+  color: #0C0B0B;
+  font-weight: 400;
 }
 
-.cuisine__part.gambling {
-  padding-left: 40px;
-}
-.cuisine__part.gambling h4 {
-  text-align: left;
+.about__picture img {
+  height: 450px;
+  object-fit: cover;
 }
 
-/*gambling-css-end*/
+/*Aboutpage-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */
