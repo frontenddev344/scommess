@@ -26,9 +26,14 @@ h1 {
     line-height: normal;
   }
 }
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 25px;
+  }
+}
 
 h2 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 75px;
   font-weight: 500;
   color: #ffc83b;
@@ -212,10 +217,10 @@ h2 {
   .facilities-content {
     padding-top: 39px;
   }
-  .lasttext {
-    padding: 0;
-  }
   section.showsbanner .homebanner-text {
+    max-width: 100%;
+  }
+  section.gamblingbanner .homebanner-text {
     max-width: 100%;
   }
 }
@@ -228,6 +233,14 @@ h2 {
   }
   .showsbanner p {
     font-size: 13px;
+  }
+  .lasttext h2 {
+    font-size: 28px !important;
+    line-height: normal;
+  }
+  .cuisine__part.gambling {
+    white-space: normal;
+    padding-left: 25px;
   }
 }
 

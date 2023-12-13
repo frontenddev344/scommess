@@ -217,13 +217,14 @@
         padding-top: 39px;
     }
 
-    .lasttext {
-        padding: 0;
-    }
-
     section.showsbanner .homebanner-text {
         max-width: 100%;
     }
+
+    section.gamblingbanner .homebanner-text {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -237,6 +238,18 @@
 
     .showsbanner p {
         font-size: 13px;
+    }
+
+    .lasttext {
+        h2 {
+            font-size: 28px !important;
+            line-height: normal;
+        }
+    }
+
+    .cuisine__part.gambling {
+        white-space: normal;
+        padding-left: 25px;
     }
 }
 
