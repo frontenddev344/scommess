@@ -1,0 +1,39 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+    color: $clr-white;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 55px;
+    color: $clr-white;
+
+    @include mq(lg) {
+        font-size: 35px;
+        line-height: normal;
+    }
+
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 500;
+    color: $clr-yellow;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>About us</title>
+</head>
+
+<body>
+    <!-- site-header start -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <a href="index.html"><img src="images/header-logo.png" alt="site-logo"></a>
+            </div>
+
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="placestostays.html">Places to Stays</a></li>
+                    <li><a href="gambling.html">Gambling</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                    <li><a href="about-us.html" class=" menu active">About us</a></li>
+                    <li class="closed-menu">
+                        <a href="#">×</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+
+
+        </div>
+    </header>
+    <!-- site header end -->
+
+
+    <!-- site aboutbanner start -->
+    <section class="aboutbanner">
+        <div class="container">
+            <div class="row">
+                <div class="homebanner-text">
+                    <h1>Chi Siamo</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- site aboutbanner end -->
+
+    <!-- site abouttext start -->
+    <section class="about__main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="about__picture">
+                        <img src="images/aboutuspicture.jpeg" class="img-fluid" alt="aboutuspicture">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 aboutspace">
+                    <div class="about__content">
+                        <p>Pianificando una visita alla capitale mondiale dell'intrattenimento o semplicemente cercando
+                            gli ultimi approfondimenti su Las Vegas, Scommess è la tua fonte di riferimento. Dai
+                            consigli esclusivi sui migliori spettacoli, hotel e casinò alle guide approfondite sulla
+                            navigazione in città, la nostra missione è rendere la tua esperienza a Las Vegas davvero
+                            straordinaria. Unisciti a noi in questo emozionante viaggio e lascia che Scommess sia il tuo
+                            fidato compagno nella scoperta della magia di Las Vegas.</p>
+                        <h3>Contattaci:</h3>
+                        <p>Hai domande, feedback o vuoi semplicemente salutarci? Ci piacerebbe sentire la tua opinione!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- site abouttext end -->
+
+    <!-- site footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="images/header-logo.png" alt="header-logo" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="placestostays.html">Places to Stays</a></li>
+                            <li><a href="gambling.html">Gambling</a></li>
+                            <li><a href="shows.html">Shows</a></li>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="terms-condition.html">Terms and Conditions</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="social-signals">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- site footer end -->
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $("body").addClass("toggle");
+            });
+        });
+
+        $(document).ready(function () {
+            $(".closed-menu").click(function () {
+                $("body").removeClass("toggle");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var header = $("header");
+                header.toggleClass("sticky", $(window).scrollTop() > 0);
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
