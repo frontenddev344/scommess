@@ -675,6 +675,10 @@ span.facility-show {
   font-size: 18px;
 }
 
+.lasttext span {
+  font-size: 19px;
+}
+
 img.rightarrow {
   width: 40px;
   transition: 0.3s;
