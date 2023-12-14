@@ -288,11 +288,11 @@ section.privacybanner::after {
 .privacybanner-text h1 {
   position: absolute;
   top: 50%;
-  color: #ffc83b;
+  color: #fff;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .content-wrap h3 {
@@ -757,16 +757,30 @@ section.about__main {
 /* new css 14-12-23*/
 
 .form-control {
-  border: 1px solid #ffc83b82;
+  border: 1px solid #0000003d;
   padding: 12px 6px;
 }
-input.btn_email {
+input.btn_contact {
   border: unset;
   margin-top: 16px;
   font-size: 16px;
   font-weight: 500;
-  padding: 5px 16px;
+  padding: 7px 30px;
   background: #ffc83b;
   color: #fff;
   border-radius: 5px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+input.btn_contact:hover{
+  background-color: transparent;
+  border: 1px solid #ffc83b;
+  color: #000;
+
+}
+.common_form_cls {
+  margin-bottom: 20px;
+}
+.email_and_number {
+  display: flex;
 }
