@@ -784,3 +784,7 @@ input.btn_contact:hover{
 .email_and_number {
   display: flex;
 }
+
+.terms__section {
+  height: 450px;
+}
