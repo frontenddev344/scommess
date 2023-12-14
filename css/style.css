@@ -751,3 +751,22 @@ section.about__main {
 
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* new css 14-12-23*/
+
+.form-control {
+  border: 1px solid #ced4da6b;
+  padding: 12px 6px;
+}
+input.btn_email {
+  border: unset;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 16px;
+  background: #ffc83b;
+  color: #fff;
+  border-radius: 5px;
+}
