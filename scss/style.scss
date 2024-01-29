@@ -794,4 +794,46 @@ section.about__main {
 
 /*Aboutpage-css-end*/
 
+
+.cuisine__main.konferanse.newcuisine__main{
+    .para{
+        color: #000;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .paragraph{
+        color: #000;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 11px;
+        max-width: 800px;
+        margin: auto;
+    }
+    .cuisine__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 21px;
+        background: #f5f2f2;
+        .cuisine__picture {
+            img{
+            height: 250px;
+            }
+        }
+        .cuisine__part {
+            position: static;
+            padding-right: 20px;
+            p{
+                color: #000;
+            }
+        }
+        .page-btn {
+            width: 389px;
+        }
+    }
+}
+
 /*# sourceMappingURL=style.css.map */
