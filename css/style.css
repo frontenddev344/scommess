@@ -773,6 +773,7 @@ section.about__main {
 }
 .cuisine__main.konferanse.newcuisine__main .cuisine__body .cuisine__picture img {
   height: 250px;
+  width: 431px;
 }
 .cuisine__main.konferanse.newcuisine__main .cuisine__body .cuisine__part {
   position: static;
@@ -783,6 +784,10 @@ section.about__main {
 }
 .cuisine__main.konferanse.newcuisine__main .cuisine__body .page-btn {
   width: 389px;
+  text-align: end;
+}
+.cuisine__main.konferanse.newcuisine__main .cuisine__body .page-btn a {
+  padding: 10px 10px;
 }
 
 

@@ -821,6 +821,7 @@ section.about__main {
         .cuisine__picture {
             img{
             height: 250px;
+           width: 431px;
             }
         }
         .cuisine__part {
@@ -832,6 +833,10 @@ section.about__main {
         }
         .page-btn {
             width: 389px;
+            text-align: end;
+            a{
+                padding: 10px 10px;
+            }
         }
     }
 }
